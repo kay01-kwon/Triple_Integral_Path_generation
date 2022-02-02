@@ -42,6 +42,7 @@ class TIP{
 
     void traj_publish();
 
+    ~TIP();
 
     private:
 
@@ -65,6 +66,12 @@ class TIP{
     double v_t2;
     double z_t2;
 
+    double z_stop_start;
+
+    double a_t3;
+    double v_t3;
+    double z_t3;
+
     double hovering_distance;
 
     double t_stop_start;
@@ -82,6 +89,8 @@ class TIP{
     double t_current;
 
     bool traj_enable;
+
+    bool is_time_init;
 
     Accel acc;
     Twist vel;
